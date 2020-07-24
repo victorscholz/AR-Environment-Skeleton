@@ -1,4 +1,5 @@
 class Teacher < ActiveRecord::Base
+    has_many :grade_level
     has_many :students, through: :grade_level
 
     def tenure
