@@ -31,15 +31,16 @@ Which method(s) did you have to create yourself? Why?
 
 Add these deliverables:
 
-- A Student belongs to a Teacher
-- Student#teacher should return the teacher that student belongs to
-- Teacher#students should return a list of all the students that belong to this teacher
+<!-- - A Student belongs to a Teacher -->
+<!-- - Student#teacher should return the teacher that student belongs to
+- Teacher#students should return a list of all the students that belong to this teacher -->
 
 Make all necessary changes to satisfy these deliverables: 
-- A Student has many Teachers through GradeLevel
-- A Teacher has many Students through GradeLevel
+<!-- - A Student has many Teachers through GradeLevel
+- A Teacher has many Students through GradeLevel -->
 
 You should have a complete seeds file 
 
 Answer the following questions:
-- What changes did you make to your app? Why? 
+What changes did you make to your app? Why? 
+    - I created a GradeLevel class as my single source of truth to join Student and Teacher. It belongs to both of them. I also had to create a table so that the GradeLevel instances could be stored. The user_id column had to be removed from the Student and Teacher class so that it could get changed to many to many. I created migrate files to drop the columns. (A handful of other migrate files were created to fix some mistakes).
