@@ -19,4 +19,11 @@ gl3 = GradeLevel.create(student_id: student3.id, teacher_id: teacher3.id)
 gl4 = GradeLevel.create(student_id: student4.id, teacher_id: teacher4.id)
 gl5 = GradeLevel.create(student_id: student4.id, teacher_id: teacher2.id)
 
-lp1 = LunchPeriod.create()
+lp1 = LunchPeriod.create(time_of_day: "early afternoon")
+lp2 = LunchPeriod.create(time_of_day: "late afternoon")
+
+slp1 = StudentLunchPeriod.create(student_id: student1.id, lunch_period_id: lp1.id)
+slp2 = StudentLunchPeriod.create(student_id: student2.id, lunch_period_id: lp1.id)
+slp3 = StudentLunchPeriod.create(student_id: student3.id, lunch_period_id: lp1.id)
+slp4 = StudentLunchPeriod.create(student_id: student4.id, lunch_period_Sid: lp2.id)
+slp5 = StudentLunchPeriod.create(student_id: student5.id, lunch_period_id: lp2.id)
