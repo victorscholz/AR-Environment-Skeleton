@@ -18,14 +18,16 @@ Domain: Student-Teacher
 <!-- - A Teacher has a last_name (string)
 - A Teacher has a grade_level (string)
 - A Teacher has a years_of_experience (integer) -->
-- Teacher#tenure should return true if a teacher has taught more than 5 years, otherwise false
+<!-- - Teacher#tenure should return true if a teacher has taught more than 5 years, otherwise false -->
 
 You should have a completed seeds file for testing
 Answer the following questions:
 
 Which method(s) does Active Record create for you?
-Which method(s) did you have to create yourself? Why? 
+    - Active record creates the initialize method and self.all
 
+Which method(s) did you have to create yourself? Why? 
+    - I had to create the methods that pulled specific data from my student and teacher instances. (full_name, self.grade_level, self.all_in_grade, tenure).
 
 Add these deliverables:
 
