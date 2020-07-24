@@ -18,3 +18,5 @@ gl2 = GradeLevel.create(student_id: student2.id, teacher_id: teacher1.id)
 gl3 = GradeLevel.create(student_id: student3.id, teacher_id: teacher3.id)
 gl4 = GradeLevel.create(student_id: student4.id, teacher_id: teacher4.id)
 gl5 = GradeLevel.create(student_id: student4.id, teacher_id: teacher2.id)
+
+lp1 = LunchPeriod.create()
